@@ -1,0 +1,134 @@
+Labels:
+  "New":
+    selected: true
+  "Favorites":
+Sort: 1
+Models:
+  model1.yml:
+    hash: "c22e00008f59a7ae"
+    name: "Aero"
+    mod0type: 6
+    mod0rf: 13
+    labels: ""
+    bitmap: "Flug62.png"
+    lastopen: 0
+  model2.yml:
+    hash: "ac2a00008f59a7ae"
+    name: "HELI"
+    mod0type: 6
+    mod0rf: 20
+    labels: ""
+    bitmap: "Hubi57.jpg"
+    lastopen: 0
+  model3.yml:
+    hash: "7f2c00008f59a8ae"
+    name: "Eachine E160"
+    mod0type: 6
+    mod0rf: 20
+    labels: ""
+    bitmap: "E160.png"
+    lastopen: 0
+  model4.yml:
+    hash: "f62e00008f59a8ae"
+    name: "Eachine E180"
+    mod0type: 6
+    mod0rf: 20
+    labels: ""
+    bitmap: "E180.png"
+    lastopen: 1734302125
+  model5.yml:
+    hash: "771f00008f59a8ae"
+    name: "Eachine P-51D"
+    mod0type: 6
+    mod0rf: 47
+    labels: ""
+    bitmap: "P51D.png"
+    lastopen: 0
+  model6.yml:
+    hash: "0f1f00008f59a8ae"
+    name: "Eachine T-28"
+    mod0type: 6
+    mod0rf: 47
+    labels: ""
+    bitmap: "t28.png"
+    lastopen: 0
+  model7.yml:
+    hash: "e71700008f59a8ae"
+    name: "Blade 120SR 2"
+    labels: "New"
+    bitmap: "120SR.JPG"
+    lastopen: 0
+  model9.yml:
+    hash: "0b1f00008f59a8ae"
+    name: "Eachine F4U"
+    mod0type: 6
+    mod0rf: 47
+    labels: ""
+    bitmap: "F4U.png"
+    lastopen: 0
+  model10.yml:
+    hash: "ba1b00008f59a8ae"
+    name: "Eachine F22"
+    mod0type: 6
+    mod0rf: 47
+    labels: ""
+    bitmap: "F22.png"
+    lastopen: 0
+  model11.yml:
+    hash: "ba1b00008f59a8ae"
+    name: "Eachine F16"
+    mod0type: 6
+    mod0rf: 47
+    labels: ""
+    bitmap: "F16.png"
+    lastopen: 0
+  model12.yml:
+    hash: "681b00008f59a8ae"
+    name: "120 SR"
+    mod0type: 6
+    mod0rf: 5
+    labels: "Favorites"
+    bitmap: "120SR.JPG"
+    lastopen: 0
+  model13.yml:
+    hash: "600f00008f59a8ae"
+    name: "MODEL14"
+    labels: ""
+    bitmap: ""
+    lastopen: 0
+  model14.yml:
+    hash: "862100008f59a8ae"
+    name: "DELTA"
+    mod0type: 6
+    mod0rf: 2
+    labels: ""
+    bitmap: "Delta1.jpg"
+    lastopen: 0
+  model15.yml:
+    hash: "f92c00008f59a8ae"
+    name: "OMPHOBBY M2"
+    mod0type: 6
+    mod0rf: 76
+    labels: ""
+    bitmap: "OH-M2-1.jpg"
+    lastopen: 0
+  model16.yml:
+    hash: "7c2900008f59a8ae"
+    name: "QUAD"
+    mod0type: 6
+    mod0rf: 2
+    labels: ""
+    bitmap: "Cva142HD.png"
+    lastopen: 0
+  model8.yml:
+    hash: ""
+    name: "Helicopter"
+    mod0type: 6
+    mod0rf: 5
+    labels: "New"
+    bitmap: ""
+    lastopen: 1734302306
+  Blade_mSRX.yml:
+    hash: ""
+    modyty
+

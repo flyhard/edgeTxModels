@@ -1,0 +1,74 @@
+model:
+  name: "Blade 120SR"
+  timestamp: 1672522560
+  icon: "helicopter"
+  module: 0
+  protocols:
+    - name: DSM
+      subtype: DSM2
+      channels: 6
+  inputs:
+    - name: Throttle
+      source: "S1"  # Default throttle stick
+    - name: Aileron
+      source: "Aileron"
+    - name: Elevator
+      source: "Elevator"
+    - name: Rudder
+      source: "Rudder"
+  mixes:
+    - channel: 1  # Throttle
+      inputs:
+        - source: "Throttle"
+          weight: 100
+    - channel: 2  # Aileron
+      inputs:
+        - source: "Aileron"
+          weight: 100
+    - channel: 3  # Elevator
+      inputs:
+        - source: "Elevator"
+          weight: 100
+    - channel: 4  # Rudder
+      inputs:
+        - source: "Rudder"
+          weight: 100
+    - channel: 5  # Gyro (optional, for advanced configurations)
+      inputs:
+        - source: "SA"  # Example: Using switch SA for Gyro
+          weight: 100
+  outputs:
+    - channel: 1  # Throttle
+      min: -100
+      max: 100
+      neutral: 0
+    - channel: 2  # Aileron
+      min: -100
+      max: 100
+      neutral: 0
+    - channel: 3  # Elevator
+      min: -100
+      max: 100
+      neutral: 0
+    - channel: 4  # Rudder
+      min: -100
+      max: 100
+      neutral: 0
+    - channel: 5  # Gyro
+      min: -100
+      max: 100
+      neutral: 0
+  switches:
+    - name: Throttle Hold
+      channel: 1
+      mode: SAFE
+      action: CUT
+      default: false
+  trims:
+    - channel: 1
+      min: -100
+      max: 100
+  safety:
+    - channel: 1
+      mode: HOLD
+      value: -100  # Throttle safety: Keep motor from spinning

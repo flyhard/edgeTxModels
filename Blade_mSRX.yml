@@ -1,0 +1,103 @@
+semver: 2.10.5
+header:
+  name: Blade_mSRX
+  bitmap: Heli.png
+  labels: ""
+  modelId:
+    0:
+      val: 1
+timers:
+  0:
+    swtch: NONE
+    mode: OFF
+    name: ""
+    minuteBeep: 0
+    countdownBeep: 2
+    start: 0
+    persistent: 0
+    countdownStart: -1
+    value: 0
+    showElapsed: 0
+    extraHaptic: 0
+mixData:
+  - destCh: 0
+    srcRaw: I2
+    weight: 100
+    swtch: NONE
+    curve:
+      type: 0
+      value: 0
+    name: Throttle
+  - destCh: 1
+    srcRaw: I0
+    weight: 100
+    swtch: NONE
+    curve:
+      type: 0
+      value: 0
+    name: Aileron
+  - destCh: 2
+    srcRaw: I1
+    weight: 100
+    swtch: NONE
+    curve:
+      type: 0
+      value: 0
+    name: Elevator
+  - destCh: 3
+    srcRaw: I3
+    weight: 100
+    swtch: NONE
+    curve:
+      type: 0
+      value: 0
+    name: Rudder
+  - destCh: 4
+    srcRaw: SF
+    weight: 100
+    swtch: NONE
+    curve:
+      type: 0
+      value: 0
+    name: Gyro
+limitData:
+  0:
+    min: -100
+    max: 100
+    revert: 0
+    name: Thr
+  1:
+    min: -100
+    max: 100
+    revert: 0
+    name: Ail
+  2:
+    min: -100
+    max: 100
+    revert: 0
+    name: Ele
+  3:
+    min: -100
+    max: 100
+    revert: 0
+    name: Rud
+  4:
+    min: -100
+    max: 100
+    revert: 0
+    name: Gyro
+moduleData:
+  0:
+    type: TYPE_MULTIMODULE
+    subType: 14,0  # DSM2
+    channelsStart: 0
+    channelsCount: 6
+    failsafeMode: NOT_SET
+    mod:
+      multi:
+        autoBindMode: 0
+        lowPowerMode: 0
+        disableTelemetry: 0
+thrTraceSrc: Thr
+swashR:
+  type: TYPE_NONE
