@@ -1,24 +1,11 @@
 semver: 2.10.5
 header:
-  name: DELTA
-  bitmap: Delta1.jpg
-  labels: ""
+  name: "mSRx #2"
+  bitmap: 120SR.JPG
+  labels: New
   modelId:
     0:
-      val: 0
-timers:
-  2:
-    swtch: NONE
-    mode: OFF
-    name: ""
-    minuteBeep: 0
-    countdownBeep: 0
-    start: 0
-    persistent: 1
-    countdownStart: 0
-    value: 8981
-    showElapsed: 0
-    extraHaptic: 0
+      val: 2
 noGlobalFunctions: 0
 thrTrim: 0
 trimInc: 0
@@ -29,84 +16,12 @@ disableThrottleWarning: 0
 enableCustomThrottleWarning: 0
 customThrottleWarningPosition: 0
 beepANACenter: 0
-extendedLimits: 1
+extendedLimits: 0
 extendedTrims: 0
 throttleReversed: 0
 checklistInteractive: 0
 mixData:
   - destCh: 0
-    srcRaw: I0
-    weight: 50
-    swtch: NONE
-    curve:
-      type: 0
-      value: 0
-    delayUp: 0
-    delayDown: 0
-    speedPrec: 0
-    speedUp: 0
-    speedDown: 0
-    carryTrim: 0
-    mltpx: ADD
-    mixWarn: 0
-    flightModes: 000000000
-    offset: 0
-    name: AilR
-  - destCh: 0
-    srcRaw: I1
-    weight: 50
-    swtch: NONE
-    curve:
-      type: 0
-      value: 0
-    delayUp: 0
-    delayDown: 0
-    speedPrec: 0
-    speedUp: 0
-    speedDown: 0
-    carryTrim: 0
-    mltpx: ADD
-    mixWarn: 0
-    flightModes: 000000000
-    offset: 0
-    name: Elev
-  - destCh: 1
-    srcRaw: I0
-    weight: 50
-    swtch: NONE
-    curve:
-      type: 0
-      value: 0
-    delayUp: 0
-    delayDown: 0
-    speedPrec: 0
-    speedUp: 0
-    speedDown: 0
-    carryTrim: 0
-    mltpx: ADD
-    mixWarn: 0
-    flightModes: 000000000
-    offset: 0
-    name: AilR
-  - destCh: 1
-    srcRaw: I1
-    weight: -50
-    swtch: NONE
-    curve:
-      type: 0
-      value: 0
-    delayUp: 0
-    delayDown: 0
-    speedPrec: 0
-    speedUp: 0
-    speedDown: 0
-    carryTrim: 0
-    mltpx: ADD
-    mixWarn: 0
-    flightModes: 000000000
-    offset: 0
-    name: Elev
-  - destCh: 2
     srcRaw: I2
     weight: 100
     swtch: NONE
@@ -123,7 +38,205 @@ mixData:
     mixWarn: 0
     flightModes: 000000000
     offset: 0
-    name: Motor
+    name: Th0
+  - destCh: 0
+    srcRaw: MAX
+    weight: -100
+    swtch: L1
+    curve:
+      type: 0
+      value: 0
+    delayUp: 0
+    delayDown: 0
+    speedPrec: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 0
+    mltpx: REPL
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: ""
+  - destCh: 0
+    srcRaw: MAX
+    weight: -100
+    swtch: SF2
+    curve:
+      type: 0
+      value: 0
+    delayUp: 0
+    delayDown: 0
+    speedPrec: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 0
+    mltpx: REPL
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: ""
+  - destCh: 1
+    srcRaw: I0
+    weight: 100
+    swtch: NONE
+    curve:
+      type: 0
+      value: 0
+    delayUp: 0
+    delayDown: 0
+    speedPrec: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 0
+    mltpx: ADD
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: Ail
+  - destCh: 1
+    srcRaw: I0
+    weight: 0
+    swtch: SF2
+    curve:
+      type: 0
+      value: 0
+    delayUp: 0
+    delayDown: 0
+    speedPrec: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 0
+    mltpx: REPL
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: ""
+  - destCh: 2
+    srcRaw: I1
+    weight: 100
+    swtch: NONE
+    curve:
+      type: 0
+      value: 0
+    delayUp: 0
+    delayDown: 0
+    speedPrec: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 0
+    mltpx: ADD
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: Ele
+  - destCh: 2
+    srcRaw: I1
+    weight: 0
+    swtch: SF2
+    curve:
+      type: 0
+      value: 0
+    delayUp: 0
+    delayDown: 0
+    speedPrec: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 0
+    mltpx: REPL
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: ""
+  - destCh: 3
+    srcRaw: I3
+    weight: 100
+    swtch: NONE
+    curve:
+      type: 0
+      value: 0
+    delayUp: 0
+    delayDown: 0
+    speedPrec: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 0
+    mltpx: ADD
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: Rud
+  - destCh: 3
+    srcRaw: MAX
+    weight: -100
+    swtch: L1
+    curve:
+      type: 0
+      value: 0
+    delayUp: 0
+    delayDown: 0
+    speedPrec: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 0
+    mltpx: REPL
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: ""
+  - destCh: 3
+    srcRaw: I3
+    weight: 0
+    swtch: SF2
+    curve:
+      type: 0
+      value: 0
+    delayUp: 0
+    delayDown: 0
+    speedPrec: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 0
+    mltpx: REPL
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: ""
+  - destCh: 4
+    srcRaw: SB
+    weight: 100
+    swtch: NONE
+    curve:
+      type: 3
+      value: 5
+    delayUp: 0
+    delayDown: 0
+    speedPrec: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 0
+    mltpx: ADD
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: ""
+  - destCh: 5
+    srcRaw: SL1
+    weight: 100
+    swtch: NONE
+    curve:
+      type: 0
+      value: 0
+    delayUp: 0
+    delayDown: 0
+    speedPrec: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 0
+    mltpx: ADD
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: ""
 limitData:
   0:
     min: 0
@@ -132,8 +245,8 @@ limitData:
     offset: 0
     ppmCenter: 0
     symetrical: 0
-    name: Ail
-    curve: 32
+    name: Throt
+    curve: 0
   1:
     min: 0
     max: 0
@@ -141,8 +254,8 @@ limitData:
     offset: 0
     ppmCenter: 0
     symetrical: 0
-    name: Ele
-    curve: 32
+    name: Ailer
+    curve: 0
   2:
     min: 0
     max: 0
@@ -150,7 +263,7 @@ limitData:
     offset: 0
     ppmCenter: 0
     symetrical: 0
-    name: Thr
+    name: Elev
     curve: 0
   3:
     min: 0
@@ -160,7 +273,7 @@ limitData:
     ppmCenter: 0
     symetrical: 0
     name: Rud
-    curve: 32
+    curve: 0
   4:
     min: 0
     max: 0
@@ -168,7 +281,7 @@ limitData:
     offset: 0
     ppmCenter: 0
     symetrical: 0
-    name: CH5
+    name: Mode
     curve: 0
   5:
     min: 0
@@ -177,97 +290,7 @@ limitData:
     offset: 0
     ppmCenter: 0
     symetrical: 0
-    name: CH6
-    curve: 0
-  6:
-    min: 0
-    max: 0
-    revert: 0
-    offset: 0
-    ppmCenter: 0
-    symetrical: 0
-    name: CH7
-    curve: 0
-  7:
-    min: 0
-    max: 0
-    revert: 0
-    offset: 0
-    ppmCenter: 0
-    symetrical: 0
-    name: CH8
-    curve: 0
-  8:
-    min: 0
-    max: 0
-    revert: 0
-    offset: 0
-    ppmCenter: 0
-    symetrical: 0
-    name: CH9
-    curve: 0
-  9:
-    min: 0
-    max: 0
-    revert: 0
-    offset: 0
-    ppmCenter: 0
-    symetrical: 0
-    name: CH10
-    curve: 0
-  10:
-    min: 0
-    max: 0
-    revert: 0
-    offset: 0
-    ppmCenter: 0
-    symetrical: 0
-    name: CH11
-    curve: 0
-  11:
-    min: 0
-    max: 0
-    revert: 0
-    offset: 0
-    ppmCenter: 0
-    symetrical: 0
-    name: CH12
-    curve: 0
-  12:
-    min: 0
-    max: 0
-    revert: 0
-    offset: 0
-    ppmCenter: 0
-    symetrical: 0
-    name: CH13
-    curve: 0
-  13:
-    min: 0
-    max: 0
-    revert: 0
-    offset: 0
-    ppmCenter: 0
-    symetrical: 0
-    name: CH14
-    curve: 0
-  14:
-    min: 0
-    max: 0
-    revert: 0
-    offset: 0
-    ppmCenter: 0
-    symetrical: 0
-    name: CH15
-    curve: 0
-  15:
-    min: 0
-    max: 0
-    revert: 0
-    offset: 0
-    ppmCenter: 0
-    symetrical: 0
-    name: CH16
+    name: Gyro
     curve: 0
 expoData:
   - srcRaw: Ail
@@ -279,7 +302,7 @@ expoData:
     weight: 100
     offset: 0
     curve:
-      type: 0
+      type: 1
       value: 0
     trimSource: 0
     name: ""
@@ -292,7 +315,7 @@ expoData:
     weight: 100
     offset: 0
     curve:
-      type: 0
+      type: 1
       value: 0
     trimSource: 0
     name: ""
@@ -305,7 +328,7 @@ expoData:
     weight: 100
     offset: 0
     curve:
-      type: 0
+      type: 1
       value: 0
     trimSource: 0
     name: ""
@@ -318,9 +341,35 @@ expoData:
     weight: 100
     offset: 0
     curve:
-      type: 0
+      type: 1
       value: 0
     trimSource: 0
+    name: ""
+  - srcRaw: SE
+    scale: 0
+    mode: 3
+    chn: 4
+    swtch: NONE
+    flightModes: 000000000
+    weight: 100
+    offset: 0
+    curve:
+      type: 1
+      value: 0
+    trimSource: 1
+    name: ""
+  - srcRaw: SL1
+    scale: 0
+    mode: 3
+    chn: 5
+    swtch: NONE
+    flightModes: 000000000
+    weight: 100
+    offset: 0
+    curve:
+      type: 1
+      value: 0
+    trimSource: 1
     name: ""
 inputNames:
   0:
@@ -331,40 +380,101 @@ inputNames:
     val: Thr
   3:
     val: Rud
+  4:
+    val: MODE
+  5:
+    val: Gyro
 curves:
   0:
     type: 0
     smooth: 0
     points: 0
-    name: ""
-  31:
+    name: TC0
+  1:
+    type: 0
+    smooth: 0
+    points: -2
+    name: TC1
+  2:
+    type: 0
+    smooth: 0
+    points: -2
+    name: TC2
+  3:
+    type: 0
+    smooth: 0
+    points: -2
+    name: THD
+  4:
     type: 1
     smooth: 0
-    points: -1
-    name: CNT
+    points: 2
+    name: swi
 points:
   0:
     val: -100
   1:
-    val: -50
+    val: 0
   2:
-    val: 0
+    val: 20
   3:
-    val: 50
+    val: 40
   4:
-    val: 100
-  155:
+    val: 40
+  5:
+    val: 60
+  6:
+    val: 50
+  7:
+    val: 60
+  8:
+    val: 75
+  9:
+    val: 75
+  10:
+    val: 75
+  11:
     val: -100
-  156:
+  12:
+    val: -100
+  13:
+    val: -100
+  14:
+    val: -100
+  15:
+    val: -100
+  16:
     val: 0
-  157:
+  17:
     val: 0
-  158:
+  18:
+    val: 0
+  19:
     val: 100
-  159:
-    val: -2
-  160:
-    val: 2
+  20:
+    val: 100
+  21:
+    val: -67
+  22:
+    val: -34
+  23:
+    val: 0
+  24:
+    val: 33
+  25:
+    val: 67
+logicalSw:
+  0:
+    func: FUNC_EDGE
+    def: SF2,0,-
+    delay: 0
+    duration: 50
+    andsw: NONE
+customFn:
+  0:
+    swtch: SF0
+    func: PLAY_TRACK
+    def: "armed\x00,0,1x"
 swashR:
   type: TYPE_NONE
   value: 0
@@ -388,6 +498,8 @@ switchWarning:
     pos: up
   SF:
     pos: up
+  SG:
+    pos: up
 thrTrimSw: 0
 potsWarnMode: WARN_OFF
 potsWarnEnabled: 0
@@ -409,57 +521,30 @@ disableTelemetryWarning: 0
 moduleData:
   0:
     type: TYPE_MULTIMODULE
-    subType: 3,0
+    subType: 6,4
     channelsStart: 0
-    channelsCount: 16
+    channelsCount: 6
     failsafeMode: NOT_SET
     mod:
       multi:
         disableTelemetry: 0
-        disableMapping: 0
-        autoBindMode: 0
+        disableMapping: 1
+        autoBindMode: 1
         lowPowerMode: 0
         optionValue: 0
 trainerData:
-  mode: SLAVE
+  mode: OFF
   channelsStart: 0
-  channelsCount: 0
+  channelsCount: -8
   frameLength: 0
   delay: 0
   pulsePol: 0
 screenData:
   0:
-    LayoutId: Layout2P1
+    LayoutId: Layout2x1
     layoutData:
       zones:
         0:
-          widgetName: ModelBmp
-          widgetData:
-            options:
-              0:
-                type: Color
-                value:
-                  color: 0x000000
-              1:
-                type: Unsigned
-                value:
-                  unsignedValue: 5
-              2:
-                type: Bool
-                value:
-                  boolValue: 0
-              3:
-                type: Color
-                value:
-                  color: 0x000000
-              4:
-                type: Bool
-                value:
-                  boolValue: 1
-        1:
-          widgetName: Timer
-          widgetData: ~
-        2:
           widgetName: Outputs
           widgetData:
             options:
@@ -474,7 +559,7 @@ screenData:
               2:
                 type: Color
                 value:
-                  color: 0x000000
+                  color: 0xe0ecf0
               3:
                 type: Color
                 value:
@@ -483,47 +568,61 @@ screenData:
                 type: Color
                 value:
                   color: 0x105c98
+        1:
+          widgetName: ModelBmp
+          widgetData:
+            options:
+              0:
+                type: Color
+                value:
+                  color: 0x105c98
+              2:
+                type: Bool
+                value:
+                  boolValue: 0
+              3:
+                type: Color
+                value:
+                  color: 0xe0ecf0
+              4:
+                type: Bool
+                value:
+                  boolValue: 1
       options:
         0:
-          type: Bool
+          type: Unsigned
           value:
-            boolValue: 1
+            unsignedValue: 1
         1:
-          type: Bool
+          type: Unsigned
           value:
-            boolValue: 1
+            unsignedValue: 1
         2:
-          type: Bool
+          type: Unsigned
           value:
-            boolValue: 1
+            unsignedValue: 1
         3:
-          type: Bool
+          type: Unsigned
           value:
-            boolValue: 1
-        4:
-          type: Bool
-          value:
-            boolValue: 0
+            unsignedValue: 1
 topbarData:
   zones:
     3:
-      widgetName: Value
+      widgetName: Internal GPS
+      widgetData: ~
+    4:
+      widgetName: Radio Info
+      widgetData: ~
+    5:
+      widgetName: Date Time
       widgetData:
         options:
           0:
-            type: Source
-            value:
-              source: TX_VOLTAGE
-          1:
             type: Color
             value:
               color: 0xf8fcf8
-          2:
-            type: Bool
-            value:
-              boolValue: 0
 view: 0
-modelRegistrationID: ""
+modelRegistrationID: 375313G-
 hatsMode: GLOBAL
 usbJoystickExtMode: 0
 usbJoystickIfMode: JOYSTICK
@@ -532,10 +631,10 @@ radioThemesDisabled: GLOBAL
 radioGFDisabled: GLOBAL
 radioTrainerDisabled: GLOBAL
 modelHeliDisabled: GLOBAL
-modelFMDisabled: GLOBAL
+modelFMDisabled: OFF
 modelCurvesDisabled: GLOBAL
-modelGVDisabled: GLOBAL
+modelGVDisabled: OFF
 modelLSDisabled: GLOBAL
 modelSFDisabled: GLOBAL
 modelCustomScriptsDisabled: GLOBAL
-modelTelemetryDisabled: GLOBAL
+modelTelemetryDisabled: OFF
